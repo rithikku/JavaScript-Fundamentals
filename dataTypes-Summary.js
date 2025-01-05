@@ -36,3 +36,27 @@ let myObj = {
 const myFunction = function (){
     console.log("Hello World");
 }
+
+// +++++++++++++++++++++++++++++++++++++
+// Stack (Primitive) -- Copy milta hai
+// Heap (Non - primitve) -- Reference milta hai
+
+let myYoutubeName = "rithikkumardotcom";
+
+let anotherYoutubeName = myYoutubeName;
+anotherYoutubeName = "roshandotcom";
+
+console.log(myYoutubeName);
+console.log(anotherYoutubeName);
+
+let userOne = {
+    email : "user@gmail.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "hitesh@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
